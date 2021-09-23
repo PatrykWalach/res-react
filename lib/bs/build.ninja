@@ -1,0 +1,20 @@
+rescript = 1
+g_finger := D:\Projekty\res-react\node_modules\@ryyppy\rescript-promise\lib\ocaml\install.stamp
+rule astj
+  command = "D:\Projekty\res-react\node_modules\.pnpm\rescript@9.1.4\node_modules\rescript\win32\bsc.exe"  -warn-error +101 -bs-v 9.1.4 -bs-jsx 3  -absname -bs-ast -o $out $i
+o src\O.ast : astj ..\..\src\O.res
+rule deps
+  command = "D:\Projekty\res-react\node_modules\.pnpm\rescript@9.1.4\node_modules\rescript\win32\bsb_helper.exe" -hash 8f55c48fe3ed40e48b50fd5eef97cd7a $in
+  restat = 1
+o src\O.d : deps src\O.ast
+rule mij
+  command = "D:\Projekty\res-react\node_modules\.pnpm\rescript@9.1.4\node_modules\rescript\win32\bsc.exe" -I src -I "D:\Projekty\res-react\node_modules\@ryyppy\rescript-promise\lib\ocaml"   -warn-error +101 -bs-package-name fp-res -bs-package-output commonjs:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src\O.cmj src\O.cmi ..\..\src\O.bs.js : mij src\O.ast
+o src\R.ast : astj ..\..\src\R.res
+o src\R.d : deps src\R.ast
+o src\R.cmj src\R.cmi ..\..\src\R.bs.js : mij src\R.ast
+o src\TR.ast : astj ..\..\src\TR.res
+o src\TR.d : deps src\TR.ast
+o src\TR.cmj src\TR.cmi ..\..\src\TR.bs.js : mij src\TR.ast

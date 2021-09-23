@@ -1,0 +1,21 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@ryyppy/rescript-promise': ^2.1.0
+  rescript: ^9.1.4
+
+dependencies:
+  '@ryyppy/rescript-promise': 2.1.0
+  rescript: 9.1.4
+
+packages:
+
+  /@ryyppy/rescript-promise/2.1.0:
+    resolution: {integrity: sha512-+dW6msBrj2Lr2hbEMX+HoWCvN89qVjl94RwbYWJgHQuj8jm/izdPC0YzxgpGoEFdeAEW2sOozoLcYHxT6o5WXQ==}
+    dev: false
+
+  /rescript/9.1.4:
+    resolution: {integrity: sha512-aXANK4IqecJzdnDpJUsU6pxMViCR5ogAxzuqS0mOr8TloMnzAjJFu63fjD6LCkWrKAhlMkFFzQvVQYaAaVkFXw==}
+    hasBin: true
+    requiresBuild: true
+    dev: false

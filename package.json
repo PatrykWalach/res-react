@@ -1,0 +1,13 @@
+{
+  "name": "fp-res",
+  "version": "0.0.0",
+  "scripts": {
+    "re:build": "rescript",
+    "re:clean": "rescript clean -with-deps",
+    "re:start": "rescript build -w"
+  },
+  "dependencies": {
+    "@ryyppy/rescript-promise": "^2.1.0",
+    "rescript": "^9.1.4"
+  }
+}

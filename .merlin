@@ -1,0 +1,10 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx "D:\Projekty\res-react\node_modules\.pnpm\rescript@9.1.4\node_modules\rescript\win32\bsc.exe -as-ppx -bs-jsx 3"
+S D:\Projekty\res-react\node_modules\.pnpm\rescript@9.1.4\node_modules\rescript\lib\ocaml
+B D:\Projekty\res-react\node_modules\.pnpm\rescript@9.1.4\node_modules\rescript\lib\ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S D:\Projekty\res-react\node_modules\@ryyppy\rescript-promise\lib\ocaml
+B D:\Projekty\res-react\node_modules\@ryyppy\rescript-promise\lib\ocaml
+S src
+B lib\bs\src
+####BSB GENERATED: NO EDIT}
