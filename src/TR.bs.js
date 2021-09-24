@@ -52,22 +52,8 @@ function flatMapFirst(fn, __x) {
   };
 }
 
-function t(param) {
-  return map((function (param) {
-                return new Promise((function (resolve, param) {
-                              return resolve({
-                                          TAG: /* Ok */0,
-                                          _0: 200
-                                        });
-                            }));
-              }), (function (param) {
-                return "12";
-              }), param);
-}
-
 exports.map = map;
 exports.flatMap = flatMap;
 exports.make = make;
 exports.flatMapFirst = flatMapFirst;
-exports.t = t;
 /* No side effect */

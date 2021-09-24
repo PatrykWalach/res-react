@@ -21,5 +21,3 @@ let flatMapFirst = fn =>
       },
     )
   )
-
-let t = (() => Promise.make((resolve, _) => resolve(. Ok(200))))->map(_ => "12")

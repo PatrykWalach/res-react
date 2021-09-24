@@ -15,12 +15,5 @@ function flatMapFirst(fn, __x) {
               }));
 }
 
-var x = Belt_Option.map({
-      name: "Foo"
-    }, (function (param) {
-        return param.name;
-      }));
-
 exports.flatMapFirst = flatMapFirst;
-exports.x = x;
-/* x Not a pure module */
+/* No side effect */

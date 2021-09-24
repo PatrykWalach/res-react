@@ -5,5 +5,4 @@ let flatMapError = (result, fn) =>
   }
 
 let mapError = fn => flatMapError(_, value => Belt.Result.Error(fn(value)))
-
-let t = Error(12)->flatMapError(_ => Ok("12"))
+ 

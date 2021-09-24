@@ -23,12 +23,6 @@ function mapError(fn, __x) {
               }));
 }
 
-var t = {
-  TAG: /* Ok */0,
-  _0: "12"
-};
-
 exports.flatMapError = flatMapError;
 exports.mapError = mapError;
-exports.t = t;
 /* No side effect */

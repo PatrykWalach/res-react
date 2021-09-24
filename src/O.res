@@ -5,7 +5,3 @@ let flatMapFirst = fn =>
     | Some(_) => Some(value)
     }
   )
-
-type person = {name: string}
-
-let x = Some({name: "Foo"})->Belt.Option.map(({name}) => name)
